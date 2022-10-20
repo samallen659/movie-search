@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { movieList, movieDetail } from '../../../mocks/movieData';
+import { movieList, movieDetail } from '../../../../mocks/movieData';
 import { addMovie } from './movieSlice';
 import { store } from '../../store';
 
