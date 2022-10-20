@@ -7,7 +7,12 @@ export const movieSlice = createSlice({
 		page: 1,
 		movieDetail: {},
 	},
-	reducers: {},
+	reducers: {
+		addMovie: (state, action) => {
+			action.payload.map((movie) => state.movieList.push(movie));
+		},
+	},
 });
 
+export const { addMovie } = movieSlice.actions;
 export default movieSlice.reducer;
